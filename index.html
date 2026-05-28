@@ -1,25 +1,163 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>Mi Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clarissa Olivas | Portfolio</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+
+    header {
+      background: #111827;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 34px;
+    }
+
+    header p {
+      margin-top: 10px;
+      color: #cbd5e1;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .section-title {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 14px;
+      padding: 20px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      transition: 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 8px 12px;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+
+    .card a:hover {
+      background: #1d4ed8;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill {
+      background: #e5e7eb;
+      padding: 6px 10px;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 13px;
+      color: #6b7280;
+    }
+  </style>
 </head>
+
 <body>
+
+<header>
   <h1>Clarissa Olivas</h1>
+  <p>HR & Data Analyst | Reclutamiento + Análisis de Datos</p>
+</header>
 
-  <h2>Mis proyectos</h2>
+<div class="container">
 
-  <ul>
-    <li>
-      <a href="https://github.com/ClarissaOlivas/telecom-analysis">Proyecto 1</a>
-    </li>
+  <h2 class="section-title">Sobre mí</h2>
+  <p>
+    Licenciada en Psicología Organizacional con experiencia en reclutamiento de ciclo completo. Actualmente desarrollando habilidades en análisis de datos aplicados a Recursos Humanos y negocio. He trabajado con equipos de contratación en EE. UU. y México, utilizando datos para generar insights y optimizar procesos de selección.
+  </p>
 
-    <li>
-      <a href="https://github.com/ClarissaOlivas/NovaRetail">Proyecto 2</a>
-    </li>
+  <h2 class="section-title">Proyectos</h2>
 
-    <li>
-      <a href="https://github.com/ClarissaOlivas/landing_experiment">Proyecto 3</a>
-    </li>
-  </ul>
+  <div class="grid">
+
+    <div class="card">
+      <h3>Telecom Analysis</h3>
+      <p>Análisis de comportamiento de clientes y métricas clave para toma de decisiones.</p>
+      <a href="https://github.com/ClarissaOlivas/telecom-analysis" target="_blank">
+        Ver proyecto
+      </a>
+    </div>
+
+    <div class="card">
+      <h3>NovaRetail</h3>
+      <p>Dashboard de ventas y rendimiento comercial con insights de negocio.</p>
+      <a href="https://github.com/ClarissaOlivas/NovaRetail" target="_blank">
+        Ver proyecto
+      </a>
+    </div>
+
+    <div class="card">
+      <h3>Landing Experiment</h3>
+      <p>Experimento de optimización de conversión en landing pages.</p>
+      <a href="https://github.com/ClarissaOlivas/landing_experiment" target="_blank">
+        Ver proyecto
+      </a>
+    </div>
+
+  </div>
+
+  <h2 class="section-title">Skills</h2>
+
+  <div class="skills">
+    <span class="skill">Reclutamiento end-to-end</span>
+    <span class="skill">KPIs</span>
+    <span class="skill">Excel (VLOOKUP, XLOOKUP, Pivot Tables)</span>
+    <span class="skill">SQL</span>
+    <span class="skill">Python (Pandas, NumPy, Matplotlib, Seaborn, SciPy)</span>
+    <span class="skill">Power BI</span>
+    <span class="skill">ATS</span>
+    <span class="skill">Análisis estadístico básico</span>
+    <span class="skill">Diseño de evaluaciones</span>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 Clarissa Olivas | Portfolio
+</footer>
+
 </body>
 </html>
